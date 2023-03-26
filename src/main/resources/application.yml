@@ -1,0 +1,16 @@
+datasource:
+  db-cooperation:
+    hikari:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: "jdbc:postgresql://localhost:5432/nir"
+      username: "asoldatov"
+      password: "asoldatov"
+      connection-timeout: 60000
+      maximum-pool-size: 5
+spring:
+  liquibase:
+    enabled: true
+    change-log: classpath:db.changelog-master.xml
+    drop-first: false
+server:
+  port: 8084

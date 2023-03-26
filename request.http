@@ -1,0 +1,573 @@
+
+### ТУЛЬСКОЕ СВУ 30-51
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/1.ТулькоеСВУ (1+;2+)+/2.Карты ВОЗ ТульскоеСВУ (+)/1 курс карты ВОЗ",
+  "schoolName": "Тульское СВУ",
+  "groupName": "1 курс"
+}
+
+### 69-12
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+"path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/1.ТулькоеСВУ (1+;2+)+/2.Карты ВОЗ ТульскоеСВУ (+)/2 курс карты ВОЗ",
+"schoolName": "Тульское СВУ",
+"groupName": "2 курс"
+}
+
+### 67-18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/1.ТулькоеСВУ (1+;2+)+/2.Карты ВОЗ ТульскоеСВУ (+)/3 курс карты ВОЗ",
+  "schoolName": "Тульское СВУ",
+  "groupName": "3 курс"
+}
+
+### 67-11
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/1.ТулькоеСВУ (1+;2+)+/2.Карты ВОЗ ТульскоеСВУ (+)/4 курс карты ВОЗ",
+  "schoolName": "Тульское СВУ",
+  "groupName": "4 курс"
+}
+
+### 45-25
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/1.ТулькоеСВУ (1+;2+)+/2.Карты ВОЗ ТульскоеСВУ (+)/5 курс карты ВОЗ",
+  "schoolName": "Тульское СВУ",
+  "groupName": "5 курс"
+}
+
+### СПбКВК 56-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/1 рота",
+  "schoolName": "СПбКВК",
+  "groupName": "1 рота"
+}
+
+### 74-4
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/2 рота",
+  "schoolName": "СПбКВК",
+  "groupName": "2 рота"
+}
+
+### 72-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/3 рота",
+  "schoolName": "СПбКВК",
+  "groupName": "3 рота"
+}
+
+### 69-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/4 рота",
+  "schoolName": "СПбКВК",
+  "groupName": "4 рота"
+}
+
+### 57-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/5 рота",
+  "schoolName": "СПбКВК",
+  "groupName": "5 рота"
+}
+
+### 70-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/6 рота",
+  "schoolName": "СПбКВК",
+  "groupName": "6 рота"
+}
+
+### 61-3
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+"path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/2.СПбКВК (1-не делали;2+)+/2.Карты ВОЗ СПбКВК/7 рота",
+"schoolName": "СПбКВК",
+"groupName": "7 рота"
+}
+
+### СПб Нахивское ВМУ 44-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/51, 52 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "51, 52 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/53 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "53 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/54 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "54 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/61 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "61 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/62 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "62 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/63 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "63 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/64 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "64 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/71 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "71 класс"
+}
+
+### 18-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/72 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "72 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/73 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "73 класс"
+}
+
+### 18-2
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/74 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "74 класс"
+}
+
+### 17-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/81 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "81 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/82 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "82 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/83 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "83 класс"
+}
+
+### 17-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/84 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "84 класс"
+}
+
+### 15-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/91 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "91 класс"
+}
+
+
+### 19-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/92 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "92 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/93 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "93 класс"
+}
+
+### 17-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/94 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "94 класс"
+}
+
+### 18-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/101 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "101 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/102 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "102 класс"
+}
+
+### 20-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/103 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "103 класс"
+}
+
+### 19-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/104 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "104 класс"
+}
+
+### 18-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/111 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "111 класс"
+}
+
+### 16-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/112 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "112 класс"
+}
+
+### 17-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/113 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "113 класс"
+}
+
+### 17-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/3.Спб НахивскоеВМУ (1+;2+)+/2.Карты ВОЗ Нахимосвкое ВМУ ( в печатном виде) (Ексель перенесли) (+)/114 класс +",
+  "schoolName": "СПб Нахивское ВМУ",
+  "groupName": "114 класс"
+}
+
+
+### Сев-Кав СВУ 0-33 пишут группу здоровья римскими цифрами. Переделать на строку
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/1 рота 5 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "1 рота 5 класс"
+}
+
+### 0-33
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/2 рота 6 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "2 рота 6 класс"
+}
+
+### 0-32
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/3 рота 7 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "3 рота 7 класс"
+}
+
+### 0-29
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/4 рота 8 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "4 рота 8 класс"
+}
+
+### 0-29
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/5 рота 9 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "5 рота 9 класс"
+}
+
+### 0-29
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/6 рота 10 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "6 рота 10 класс"
+}
+
+### 1-27
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/4.Сев-Кав СВУ (1+;2+)+/2.Карты ВОЗ Сев-Кав СВУ ( в печатном виде) (Ексель перенесли) (+)/7 рота 11 класс (+)",
+  "schoolName": "Сев-Кав СВУ",
+  "groupName": "7 рота 11 класс"
+}
+
+### Екб СВУ 78-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/5.Екб СВУ (1+;2+)+/2.Карты ВОЗ Екб СВУ ( в печатном виде частично) (Ексель перенесли) (+)/4 рота +",
+  "schoolName": "Екб СВУ",
+  "groupName": "4 рота"
+}
+
+### 32-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/5.Екб СВУ (1+;2+)+/2.Карты ВОЗ Екб СВУ ( в печатном виде частично) (Ексель перенесли) (+)/5 рота +",
+  "schoolName": "Екб СВУ",
+  "groupName": "5 рота"
+}
+
+### 45-2
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/5.Екб СВУ (1+;2+)+/2.Карты ВОЗ Екб СВУ ( в печатном виде частично) (Ексель перенесли) (+)/6 рота +",
+  "schoolName": "Екб СВУ",
+  "groupName": "6 рота"
+}
+
+### 58-1 проблемы обычно с датой рождения
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/5.Екб СВУ (1+;2+)+/2.Карты ВОЗ Екб СВУ ( в печатном виде частично) (Ексель перенесли) (+)/7 рота +",
+  "schoolName": "Екб СВУ",
+  "groupName": "7 рота"
+}
+
+### Тюмень ПКУ 90-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/7",
+  "schoolName": "Тюмень ПКУ",
+  "groupName": "7"
+}
+
+### 112-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/8",
+  "schoolName": "Тюмень ПКУ",
+  "groupName": "8"
+}
+
+### 101-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/9",
+  "schoolName": "Тюмень ПКУ",
+  "groupName": "9"
+}
+
+### 88-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/10",
+  "schoolName": "Тюмень ПКУ",
+  "groupName": "10"
+}
+
+### 83-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/11",
+  "schoolName": "Тюмень ПКУ",
+  "groupName": "11"
+}
+
+
+### 83-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/11",
+  "schoolName": "Тюмень ПКУ",
+  "groupName": "11"
+}
+
+
+### Импорт социологии
+POST http://localhost:8084/questionnaire/import
+
+### Экспорт социологии
+POST http://localhost:8084/questionnaire/export2
+
+### Экспорт социологии
+POST http://localhost:8084/questionnaire/toDataset
