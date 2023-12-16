@@ -8,6 +8,6 @@ import java.util.Optional;
 
 public interface GroupRepository extends CrudRepository<Group, Long> {
 
-    Optional<Object> findByNameAndSchool(String name, School school);
+    Optional<Group> findByNameAndSchool(String name, School school);
 
 }

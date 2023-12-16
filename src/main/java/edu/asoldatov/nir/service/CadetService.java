@@ -6,4 +6,6 @@ public interface CadetService {
 
     void save(Cadet cadet);
 
+    Iterable<Cadet> findAll();
+
 }

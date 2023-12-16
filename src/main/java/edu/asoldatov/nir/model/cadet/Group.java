@@ -25,7 +25,7 @@ public class Group {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "group", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "group", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Cadet> cadets;
 
     @Column(name = "school")

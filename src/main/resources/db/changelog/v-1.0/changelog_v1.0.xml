@@ -5,5 +5,7 @@
 
     <include file="classpath:/db/changelog/v-1.0/initial.sql"/>
     <include file="classpath:/db/changelog/v-1.0/questionnaire.sql"/>
+    <include file="classpath:/db/changelog/v-1.0/second.sql"/>
+    <include file="classpath:/db/changelog/v-1.0/report13kmed.sql"/>
 
 </databaseChangeLog>

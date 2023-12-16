@@ -1,5 +1,15 @@
+### ЕУЫЕ
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
 
-### ТУЛЬСКОЕ СВУ 30-51
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/1.ТулькоеСВУ (1+;2+)+/2.Карты ВОЗ ТульскоеСВУ (+)/test",
+  "schoolName": "Тульское СВУ",
+  "groupName": "1 курс"
+}
+
+
+### ТУЛЬСКОЕ СВУ 46-35
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -9,7 +19,7 @@ Content-Type: application/json
   "groupName": "1 курс"
 }
 
-### 69-12
+### 79-3
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -19,7 +29,7 @@ Content-Type: application/json
 "groupName": "2 курс"
 }
 
-### 67-18
+### 85-0
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -29,7 +39,7 @@ Content-Type: application/json
   "groupName": "3 курс"
 }
 
-### 67-11
+### 78-0
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -39,7 +49,7 @@ Content-Type: application/json
   "groupName": "4 курс"
 }
 
-### 45-25
+### 70
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -49,7 +59,7 @@ Content-Type: application/json
   "groupName": "5 курс"
 }
 
-### СПбКВК 56-1
+### СПбКВК 57
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -59,7 +69,7 @@ Content-Type: application/json
   "groupName": "1 рота"
 }
 
-### 74-4
+### 77-1 - дата рождения
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -69,7 +79,7 @@ Content-Type: application/json
   "groupName": "2 рота"
 }
 
-### 72-1
+### 73
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -79,7 +89,7 @@ Content-Type: application/json
   "groupName": "3 рота"
 }
 
-### 69-1
+### 69-1 - дата рождения
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -99,7 +109,7 @@ Content-Type: application/json
   "groupName": "5 рота"
 }
 
-### 70-1
+### 71
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -119,6 +129,7 @@ Content-Type: application/json
 "groupName": "7 рота"
 }
 
+###TODOOOOOOO
 ### СПб Нахивское ВМУ 44-0
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
@@ -219,7 +230,7 @@ Content-Type: application/json
   "groupName": "73 класс"
 }
 
-### 18-2
+### 20
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -350,7 +361,7 @@ Content-Type: application/json
   "groupName": "104 класс"
 }
 
-### 18-1
+### 19
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -391,7 +402,7 @@ Content-Type: application/json
 }
 
 
-### Сев-Кав СВУ 0-33 пишут группу здоровья римскими цифрами. Переделать на строку
+### Сев-Кав СВУ 33
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -401,7 +412,7 @@ Content-Type: application/json
   "groupName": "1 рота 5 класс"
 }
 
-### 0-33
+### 33
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -411,7 +422,7 @@ Content-Type: application/json
   "groupName": "2 рота 6 класс"
 }
 
-### 0-32
+### 32
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -421,7 +432,7 @@ Content-Type: application/json
   "groupName": "3 рота 7 класс"
 }
 
-### 0-29
+### 29
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -431,7 +442,7 @@ Content-Type: application/json
   "groupName": "4 рота 8 класс"
 }
 
-### 0-29
+### 33
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -441,7 +452,7 @@ Content-Type: application/json
   "groupName": "5 рота 9 класс"
 }
 
-### 0-29
+### 32
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -451,7 +462,7 @@ Content-Type: application/json
   "groupName": "6 рота 10 класс"
 }
 
-### 1-27
+### 28
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -471,7 +482,7 @@ Content-Type: application/json
   "groupName": "4 рота"
 }
 
-### 32-1
+### 33
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -481,7 +492,7 @@ Content-Type: application/json
   "groupName": "5 рота"
 }
 
-### 45-2
+### 47
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -491,7 +502,7 @@ Content-Type: application/json
   "groupName": "6 рота"
 }
 
-### 58-1 проблемы обычно с датой рождения
+### 59
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -531,7 +542,7 @@ Content-Type: application/json
   "groupName": "9"
 }
 
-### 88-1
+### 88-1  Cannot get a STRING value from a NUMERIC formula cell
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
@@ -552,15 +563,395 @@ Content-Type: application/json
 }
 
 
-### 83-0
+###КазаньСВУ 60
 POST http://localhost:8084/cadet/import
 Content-Type: application/json
 
 {
-  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/6.ТюменьПКУ (1-не делали;2+)+/2.Карты ВОЗ ТюменьПКУ ( в электронном сразу) (+)/11",
-  "schoolName": "Тюмень ПКУ",
-  "groupName": "11"
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №1 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №1 +"
 }
+
+### 84
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №2 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №2 +"
+}
+
+### 61
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №3 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №3 +"
+}
+
+### 67-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №4 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №4 +"
+}
+
+### 73-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №5 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №5 +"
+}
+
+### 88-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №6 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №6 +"
+}
+
+### 79-0
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/7.КазаньСВУ (1+;2+)+/2.Карты ВОЗ Казань СВУ ( в печатном виде) (Ексель перенесли) (+)/Папка №7 +",
+  "schoolName": "Казань СВУ",
+  "groupName": "Папка №7 +"
+}
+
+### 62-17 Ульяновское СВУ Cannot get a NUMERIC value from a STRING cell
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/2 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "2 рота"
+}
+
+### 71
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/3 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "3 рота"
+}
+
+### 68-2
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/4 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "4 рота"
+}
+
+### 74
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/5 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "5 рота"
+}
+
+### 70
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/6 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "6 рота"
+}
+
+### 62
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/7 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "7 рота"
+}
+
+### 65-11 Cannot get a NUMERIC value from a STRING cell
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/8.Ульяноское СВУ (1+;2+)+/2.Карты ВОЗ Ульяновск СВУ ( в печатном виде) (Ексель перенесли) (+)/8 рота +",
+  "schoolName": "Ульяновское СВУ",
+  "groupName": "8 рота"
+}
+
+### Петрозаводское СВУ 18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/5 класс +/А +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "5a"
+}
+
+### 20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/5 класс +/Б +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "5б"
+}
+
+### 17
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/5 класс +/В +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "5в"
+}
+
+### 18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/5 класс +/Г +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "5г"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/5 класс +/Д +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "5д"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/5 класс +/Е +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "5е"
+}
+
+###  18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/6 класс +/А +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "6a"
+}
+
+### 20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/6 класс +/Б +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "6б"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/6 класс +/В +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "6в"
+}
+
+### 20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/6 класс +/Г +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "6г"
+}
+
+### 20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/6 класс +/Д +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "6д"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/6 класс +/Е +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "6е"
+}
+
+###  17
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/7 класс +/А +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "7a"
+}
+
+### 20-1
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/7 класс +/Б +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "7б"
+}
+
+### 18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/7 класс +/В +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "7в"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/7 класс +/Г +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "7г"
+}
+
+### 20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/7 класс +/Д +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "7д"
+}
+
+### 18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/7 класс +/Е +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "7е"
+}
+
+
+
+###  20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/8 класс +/А +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "8a"
+}
+
+### 16
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/8 класс +/Б +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "8б"
+}
+
+### 20
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/8 класс +/В +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "8в"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/8 класс +/Г +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "8г"
+}
+
+### 19
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/8 класс +/Д +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "8д"
+}
+
+### 18
+POST http://localhost:8084/cadet/import
+Content-Type: application/json
+
+{
+  "path": "/Users/asoldatov/ИТМО/НИР/Анкеты эпидемиологического обследования/9.Петрозаводское ПКУ (1+;2+)+/2.Карты ВОЗ Петрозаводск ПКУ ( в печатном виде) (Ексель перенесли) (+)/8 класс +/Е +",
+  "schoolName": "Петрозаводское СВУ",
+  "groupName": "8е"
+}
+### Очистка базы
+POST http://localhost:8084/cadet/clean
+
+### Заполнение пропущенных данных
+POST http://localhost:8084/cadet/prepare
+
+###
+POST http://localhost:8084/cadet/data
 
 
 ### Импорт социологии
@@ -571,3 +962,22 @@ POST http://localhost:8084/questionnaire/export2
 
 ### Экспорт социологии
 POST http://localhost:8084/questionnaire/toDataset
+
+
+
+###
+POST https://gateway.payment.test.paymatrix.ru/api/order/create
+token_access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWJqZWN0IjoiY3J5cHRvQWNjcnVpbmciLCJSb2xlIjoibWVyY2hhbnQiLCJOYW1lIjoiZmlyc3RNZXJjaGFudCIsIklzc3VlciI6Iklzc3VlciIsIklEIjoiMWU2MmMyNmQtNmJlZi00ZmU1LWFlOTYtMGZkZTQ4OWE0OTc5IiwiRXhwaXJlc0F0IjoiMTk5OTIzOTk5OSIsIk5vdEJlZm9yZSI6IjE1MTYyMzk5OTkiLCJJc3N1ZWRBdCI6IjE1MTYyMzk5OTkiLCJrZXkiOiIxMjMxMjMxMiJ9.Hk5B5f02AZuLpwxUez_q7nrBtMcHGf0P80p-ZJbY4zM
+Content-Type: application/json
+
+{
+  "order_id": "29",
+  "amount": "100",
+  "currency_сode": "RUB",
+  "customer_id": "1",
+  "card_holder": "ALEXEY",
+  "data_init": "2023-10-09T11:33:13",
+  "email": "a@korzh.co"
+}
+
+

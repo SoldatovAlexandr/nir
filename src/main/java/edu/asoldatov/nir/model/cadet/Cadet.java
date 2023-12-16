@@ -87,13 +87,25 @@ public class Cadet {
     @OneToOne(mappedBy = "cadet", cascade = CascadeType.ALL)
     private TemporomandibularJoint temporomandibularJoint;
 
+    @OneToOne(mappedBy = "cadet", cascade = CascadeType.ALL)
+    private DamageOralMucosa damageOralMucosa;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cadet")
     private List<PeriodontalTissue> periodontalTissue;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cadet")
     private List<EnamelSpotting> enamelSpotting;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cadet")
+    private List<AttachmentLoss> attachmentLosses;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cadet")
+    private List<HygieneIndex> hygieneIndices;
+
     @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "group_id")
     private Group group;
+
+    @Column(name = "emergency_help")
+    private Integer emergencyHelp;
 }
