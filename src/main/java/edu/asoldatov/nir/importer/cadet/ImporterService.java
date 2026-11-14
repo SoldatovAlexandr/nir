@@ -52,6 +52,7 @@ public class ImporterService {
                     String errorText = String.format("Something went wrong [%s]. Can not import file [%s]", e.getMessage(), path);
                     errors.add(errorText);
                     log.error(errorText);
+                    e.printStackTrace();
                 }
             }
             log.info("Finish import directory [{}]. Imported files count [{}]", directoryName, count);

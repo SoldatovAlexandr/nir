@@ -13,6 +13,9 @@ public class TulaSVUCadetImporter extends DefaultCadetImporter {
         if (cell == null) {
             cell = sheet.getRow(58).getCell(59);
         }
+        if (cell == null) {
+            return 0;
+        }
         return Double.valueOf(cell.getNumericCellValue()).intValue();
     }
 

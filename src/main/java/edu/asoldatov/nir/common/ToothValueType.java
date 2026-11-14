@@ -15,11 +15,15 @@ public enum ToothValueType {
     B_ru("В", 1),
     C("C", 2),
     C_ru("C", 2),
+    C_2("С", 2),
     D("D", 3),
     E("E", 4),
     E_ru("E", 4),
+    E_2("Е", 4),
     F("F", 6),
     G("G", 7),
+    X("Х", 9),
+    X_("-", 9),
     EMPTY("", 9);//TODO cпросить у Вани
 
     private final String label;
@@ -30,6 +34,6 @@ public enum ToothValueType {
                 .filter(v -> v.label.equals(value.toUpperCase()))
                 .map(v -> v.value)
                 .findFirst()
-                .orElseThrow();
+                .orElse(9);
     }
 }

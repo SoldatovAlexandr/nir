@@ -27,7 +27,7 @@ public class Tooth {
     @Column(name = "value")
     private Integer value;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "year_dental_condition_id", referencedColumnName = "id")
     private YearDentalCondition yearDentalCondition;
 

@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.List;
@@ -24,7 +26,7 @@ public class YearDentalCondition {
     @Column(name = "year")
     private String year;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "yearDentalCondition")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "yearDentalCondition", fetch = FetchType.EAGER)
     private List<Tooth> teeth;
 
     @ManyToOne(cascade = CascadeType.ALL)
