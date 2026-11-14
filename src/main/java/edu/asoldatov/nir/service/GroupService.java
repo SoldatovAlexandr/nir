@@ -11,4 +11,5 @@ public interface GroupService {
 
     void prepare();
 
+    Group findByNameAndSchool(String name, School school);
 }

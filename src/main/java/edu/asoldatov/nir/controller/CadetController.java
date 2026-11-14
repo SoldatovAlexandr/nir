@@ -3,6 +3,7 @@ package edu.asoldatov.nir.controller;
 import edu.asoldatov.nir.common.School;
 import edu.asoldatov.nir.controller.dto.CadetImportDto;
 import edu.asoldatov.nir.controller.dto.ImportResultDto;
+import edu.asoldatov.nir.importer.cadet.AdditionalImporter;
 import edu.asoldatov.nir.importer.cadet.ImporterService;
 import edu.asoldatov.nir.model.cadet.Group;
 import edu.asoldatov.nir.service.DataService;
@@ -21,15 +22,23 @@ public class CadetController {
     public static final String ROOT_MAPPING = "/cadet";
 
     private final ImporterService importerService;
+    private final AdditionalImporter additionalImporter;
     private final GroupService groupService;
 
     private final DataService dataService;
 
-    @PostMapping(value = "/import")
+/*    @PostMapping(value = "/import")
     public ImportResultDto add(@RequestBody CadetImportDto cadetImportDto) {
         final School school = School.findByLabel(cadetImportDto.getSchoolName());
         final Group group = groupService.create(cadetImportDto.getGroupName(), school);
         return importerService.importDirectory(cadetImportDto.getPath(), group);
+    }*/
+
+    @PostMapping(value = "/import")
+    public ImportResultDto add(@RequestBody CadetImportDto cadetImportDto) {
+        final School school = School.findByLabel(cadetImportDto.getSchoolName());
+        final Group group = groupService.findByNameAndSchool(cadetImportDto.getGroupName(), school);
+        return additionalImporter.importDirectory(cadetImportDto.getPath(), group);
     }
 
     @PostMapping(value = "/clean")

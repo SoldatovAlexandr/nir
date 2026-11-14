@@ -108,4 +108,7 @@ public class Cadet {
 
     @Column(name = "emergency_help")
     private Integer emergencyHelp;
+
+
+
 }

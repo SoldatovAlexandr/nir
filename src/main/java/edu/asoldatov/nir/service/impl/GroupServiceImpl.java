@@ -63,5 +63,10 @@ public class GroupServiceImpl implements GroupService {
         }
     }
 
+    @Override
+    public Group findByNameAndSchool(String name, School school) {
+        return groupRepository.findByNameAndSchool(name, school).get();
+    }
+
 
 }

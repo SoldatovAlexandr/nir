@@ -18,7 +18,6 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -162,8 +161,8 @@ public class DataServiceImpl implements DataService {
     }
 
 
-    //@EventListener(ApplicationReadyEvent.class)
-    @Override
+    /*@EventListener(ApplicationReadyEvent.class)
+    @Override*/
     public void build() {
         int emptyYears = 0;
         int oneYear = 0;
@@ -229,7 +228,124 @@ public class DataServiceImpl implements DataService {
         //Success import [2460], empty years [20], one year [1221].
 
         try {
-            Path path = Files.createFile(Path.of("/Users/asoldatov/ИТМО/cpu_0912.csv"));
+            Path path = Files.createFile(Path.of("/Users/asoldatov/ИТМО/cpu_FOR_ESTIMATE.csv"));
+            Files.write(path, result);
+        } catch (IOException e) {
+            log.error("Something went wrong");
+            throw new RuntimeException(e);
+        }
+    }
+
+    //@EventListener(ApplicationReadyEvent.class)
+    public void kkffk() {
+        List<Long> ids = new ArrayList<>();
+        ids.addAll(List.of(
+                2515926L, 2518800L, 2516221L, 2516572L, 2517859L, 2516923L, 2516338L, 2515281L, 2517976L, 2515692L
+        ));
+        ids.addAll(List.of(
+                2405536L, 2394999L, 2394027L, 2399368L, 2396798L, 2404251L, 2401167L, 2398340L, 2398083L, 2404765L
+        ));
+        ids.addAll(List.of(
+                2400910L, 2398854L, 2397312L, 2394541L, 2394284L, 2399882L, 2401681L, 2403737L, 2405793L, 2406821L
+        ));
+        ids.addAll(List.of(
+                2393513L, 2395256L, 2405022L, 2407335L, 2393256L, 2395513L, 2406050L, 2406564L, 2401938L, 2403480L
+        ));
+        ids.addAll(List.of(
+                2396284L, 2400139L, 2402709L, 2406307L, 2392999L, 2395770L, 2396027L, 2400396L, 2402195L, 2403223L
+        ));
+
+        cadetRepository.findAllById(ids).forEach(v-> System.out.println(v.getFullName()));
+
+
+
+        /*int id = 1;
+        int cID = 1;
+        for (Cadet cadet : cadets) {
+            DentalCondition dentalCondition = dentalConditionRepository.findByCadet(cadet);
+
+            List<YearDentalCondition> r = yearDentalConditionRepository.findAllByDentalCondition(dentalCondition)
+                    .stream()
+                    .filter(v -> v.getTeeth().size() != 0)
+                    .sorted(Comparator.comparing(YearDentalCondition::getYear)).collect(Collectors.toList());
+
+            for (YearDentalCondition year : r) {
+                int cpu = new CPU(year.getTeeth()).calculateCpu();
+                System.out.println(String.format("(%s, %s, 'В %s учебном году индекс КПУ составил: %s'),", cID++, id, year.getYear(), cpu));
+            }
+            id++;
+        }*/
+
+    }
+
+    //@EventListener(ApplicationReadyEvent.class)
+    public void build2() {
+        int emptyYears = 0;
+        int oneYear = 0;
+        int success = 0;
+
+        List<Long> ids = new ArrayList<>();
+        ids.addAll(List.of(
+                2515926L, 2518800L, 2516221L, 2516572L, 2517859L, 2516923L, 2516338L, 2515281L, 2517976L, 2515692L
+        ));
+        ids.addAll(List.of(
+                2405536L, 2394999L, 2394027L, 2399368L, 2396798L, 2404251L, 2401167L, 2398340L, 2398083L, 2404765L
+        ));
+        ids.addAll(List.of(
+                2400910L, 2398854L, 2397312L, 2394541L, 2394284L, 2399882L, 2401681L, 2403737L, 2405793L, 2406821L
+        ));
+        ids.addAll(List.of(
+                2393513L, 2395256L, 2405022L, 2407335L, 2393256L, 2395513L, 2406050L, 2406564L, 2401938L, 2403480L
+        ));
+        ids.addAll(List.of(
+                2396284L, 2400139L, 2402709L, 2406307L, 2392999L, 2395770L, 2396027L, 2400396L, 2402195L, 2403223L
+        ));
+        Iterable<Cadet> cadets = cadetRepository.findAllById(ids);
+
+        Map<Integer, String> sociology = prepareSociology();
+
+        List<String> result = new ArrayList<>();
+
+        result.add("age;nationality;place_of_birth;previous_place_of_living;school;bite_type;health_group;sum_hygiene_index;" +
+                "tooth_erosion;tooth_erosion_count;dental_trauma;dental_trauma_count;" +
+                "num_intact;num_caries;num_filling_with_caries;num_filling_without_caries;num_removal_caries;num_removal_other_reason;num_sealed_fissure;num_veneer;num_impacted;num_not_registered;" +
+                "num_intact_temp;num_caries_temp;num_filling_with_caries_temp;num_filling_without_caries_temp;num_removal_caries_temp;num_sealed_fissure_temp;num_veneer_temp;" +
+                "joint_symptoms;joint_clicking;joint_soreness;joint_limitation;" +
+                "emergency_help;dental_condition;is_hide_smile;is_missed_class;tooth_sensitivity;visit_number;brush_properly;how_you_brush;toothpick;wooden_stick;floss;thread;irrigator;interdental_brush;" +
+                "cpu;cpu_next;delta_cpu");
+
+        for (Cadet cadet : cadets) {
+            DentalCondition dentalCondition = dentalConditionRepository.findByCadet(cadet);
+
+            List<YearDentalCondition> years = yearDentalConditionRepository.findAllByDentalCondition(dentalCondition)
+                    .stream()
+                    .filter(v -> v.getYear().equals("2017-2018"))
+                    .collect(Collectors.toList());
+
+            for (int i = 0; i < years.size(); i++) {
+                YearDentalCondition current = years.get(i);
+
+                int age = Years.getByLabel(current.getYear()).calculateAgeByYear(cadet.getAge());
+
+                CPU currentCpu = new CPU(current.getTeeth());
+
+                result.add(
+                        age + ";" + cadet.getEthnicGroup() + ";" + cadet.getPlaceOfBirth() + ";" + cadet.getRegionOfResidence() + ";" + cadet.getGroup().getSchool().getLabel() + ";" + cadet.getBite().name() + ";" + cadet.getHealthGroup() + ";" + cadet.getLevelOfHygiene() + ";" +
+                                cadet.getToothErosion() + ";" + cadet.getToothErosionCount() + ";" + cadet.getDentalTrauma() + ";" + cadet.getDentalTraumaCount() + ";" +
+                                currentCpu.intact + ";" + currentCpu.caries + ";" + currentCpu.fillingWithCaries + ";" + currentCpu.fillingWithoutCaries + ";" + currentCpu.removalCaries + ";" + currentCpu.removalOtherReason + ";" + currentCpu.sealedFissure + ";" + currentCpu.veneer + ";" + currentCpu.impacted + ";" + currentCpu.notRegistered + ";" +
+                                currentCpu.intactTemp + ";" + currentCpu.cariesTemp + ";" + currentCpu.fillingWithCariesTemp + ";" + currentCpu.fillingWithoutCariesTemp + ";" + currentCpu.removalCariesTemp + ";" + currentCpu.sealedFissureTemp + ";" + currentCpu.veneerTemp + ";" +
+                                cadet.getTemporomandibularJoint().getSymptoms() + ";" + cadet.getTemporomandibularJoint().getClicking() + ";" + cadet.getTemporomandibularJoint().getSoreness() + ";" + cadet.getTemporomandibularJoint().getLimitationOfJawMovement() + ";" +
+                                cadet.getEmergencyHelp() + ";" + sociology.get(age) +
+                                currentCpu.calculateCpu() + ";" + currentCpu.calculateCpu() + ";" + 0
+                );
+            }
+        }
+
+        log.info("Success import [{}], empty years [{}], one year [{}].", success, emptyYears, oneYear);
+        //Success import [2460], empty years [20], one year [1221].
+
+        try {
+            Path path = Files.createFile(Path.of("/Users/asoldatov/ИТМО/cpu_FOR_ESTIMATE.csv"));
             Files.write(path, result);
         } catch (IOException e) {
             log.error("Something went wrong");

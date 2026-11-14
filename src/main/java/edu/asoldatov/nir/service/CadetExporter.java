@@ -8,9 +8,10 @@ import edu.asoldatov.nir.model.cadet.Tooth;
 import edu.asoldatov.nir.model.cadet.YearDentalCondition;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.context.event.ApplicationStartedEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -72,7 +73,7 @@ public class CadetExporter {
         for (Cadet cadet : repository.findAll()) {
             yearDentalConditionRepository.findAllByDentalCondition(cadet.getDentalCondition())
                     .stream()
-                    .filter(v -> v.getTeeth().size() > 0)
+                    .filter(v -> !v.getTeeth().isEmpty())
                     .forEach(v -> cadets.add(new TempCadet(cadet.getAge() - YEARS.get(v.getYear()), cadet.getGroup().getSchool(), new CPU(v.getTeeth()))));
         }
 
@@ -107,7 +108,7 @@ public class CadetExporter {
         save("KPU_KP_18", result18);
     }
 
-    //@PostConstruct
+    @EventListener(ApplicationStartedEvent.class)
     public void exportKPU() {
         List<TempCadet2> cadets = new ArrayList<>();
 
@@ -159,30 +160,24 @@ public class CadetExporter {
 
         for (List<Integer> number : numbers) {
             result.add(
-                    kpuRow(cadets, 10, number) +
-                            kpuRow(cadets, 11, number) +
-                            kpuRow(cadets, 12, number) +
-                            kpuRow(cadets, 13, number) +
-                            kpuRow(cadets, 14, number) +
-                            kpuRow(cadets, 15, number) +
-                            kpuRow(cadets, 16, number) +
-                            kpuRow(cadets, 17, number) +
-                            kpuRow(cadets, 18, number)
+                    kpuRow(cadets, List.of(10, 11, 12), number) +
+                            kpuRow(cadets, List.of(13, 14, 15), number) +
+                            kpuRow(cadets, List.of(16, 17, 18), number)
             );
         }
-        save("KPU_KP_2", result);
+        save("KPU_KP_GROUPED_BY_GROUP", result);
     }
 
-    private static String kpuRow(List<TempCadet2> cadets, int age, List<Integer> numbers) {
+    private static String kpuRow(List<TempCadet2> cadets, List<Integer> ages, List<Integer> numbers) {
         List<Tooth> teeth = cadets.stream()
-                .filter(v -> v.age == age)
+                .filter(v -> ages.contains(v.age))
                 .flatMap(v -> v.teeth.stream())
                 .filter(v -> numbers.contains(v.getNumber()))
                 .collect(Collectors.toList());
 
         CPU cpu = new CPU(teeth);
 
-        if (teeth.size() == 0) {
+        if (teeth.isEmpty()) {
             return "0;0;0;0;0;0;";
         }
         return String.format("%.2f", (cpu.K() / (teeth.size() * 1.0)) * 100) + ";" +
@@ -202,14 +197,14 @@ public class CadetExporter {
 
     }
 
-    //@PostConstruct
+    //@EventListener(ApplicationStartedEvent.class)
     public void export_delta_KPU() {
         List<DeltaCadetTemplate> cadets = new ArrayList<>();
 
         for (Cadet cadet : repository.findAll()) {
             List<YearDentalCondition> years = yearDentalConditionRepository.findAllByDentalCondition(cadet.getDentalCondition())
                     .stream()
-                    .filter(v -> v.getTeeth().size() > 0)
+                    .filter(v -> !v.getTeeth().isEmpty())
                     .collect(Collectors.toList());
 
             for (int i = 1; i < years.size(); i++) {
